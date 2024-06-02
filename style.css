@@ -37,6 +37,13 @@ body{
     background-size: cover;
     transition: var(--transition);
     scroll-snap-align: start;
+    /* CONTENT */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: baseline;
 }
 
 .innerContainer:hover{
@@ -46,8 +53,25 @@ body{
 }
 
 .innerContainer img{
-    width: 20%;
+    width: 100%;
     height: auto;
+}
+
+.applicationLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--color);
+    font-style: normal;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.applicationLink:hover{
+    color: var(--color);
+    text-decoration: underline;
+    transition: var(--transition);
 }
 
 @media (max-width: 768px){
@@ -80,6 +104,8 @@ body{
     justify-content: center;
 }
 
-.footer a, .footer p{
+a, a:hover, a:focus, p{
     color: var(--color);
+    font-style: normal;
+    text-decoration: none;
 }
