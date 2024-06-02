@@ -1,0 +1,15 @@
+html{scroll-behavior: smooth;}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--color);
+    background: var(--background);
+    text-align: left;
+    font-family: "Arial", sans-serif;
+    --theme1: #3498db;
+    --theme2: #2980b9;
+    --background: #eaf2f8;
+    --color: #1d1d1d;
+    --transition: 200ms ease all;
+}
