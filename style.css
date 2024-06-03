@@ -7,8 +7,7 @@ body{
     background: var(--background);
     text-align: left;
     font-family: "Arial", sans-serif;
-    --theme1: #3498db;
-    --theme2: #2980b9;
+    --theme1: #54A0FF;
     --background: #181818;
     --color: #f8f8f8;
     --transition: 500ms ease-in-out all;
@@ -53,9 +52,11 @@ body{
     cursor: pointer;
 }
 
-body:has(.innerContainer:hover) .innerContainer:not(:hover){
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
+@media (min-width: 769px){
+    body:has(.innerContainer:hover) .innerContainer:not(:hover){
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
 }
 
 .innerContainer img{
@@ -80,6 +81,20 @@ body:has(.innerContainer:hover) .innerContainer:not(:hover){
     transition: var(--transition);
 }
 
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a, a:hover, a:focus, p{
+    color: var(--color);
+    font-style: normal;
+    text-decoration: none;
+}
+
 @media (max-width: 768px){
     body{
         overflow: auto;
@@ -100,18 +115,8 @@ body:has(.innerContainer:hover) .innerContainer:not(:hover){
         flex-basis: 100%;
         align-self: stretch;
     }
-}
 
-.footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-a, a:hover, a:focus, p{
-    color: var(--color);
-    font-style: normal;
-    text-decoration: none;
+    .footer{
+        background: var(--theme1);
+    }
 }
