@@ -1,5 +1,5 @@
 /
-  Content-Security-Policy: default-src 'self'; font-src 'self'; img-src *; object-src 'none'; script-src 'self' unsafe-inline; style-src 'self' unsafe-inline; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; font-src 'self'; img-src *; object-src 'self'; script-src 'self' unsafe-inline; style-src 'self' unsafe-inline; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
   X-Xss-Protection: 1; mode=block
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
@@ -8,4 +8,4 @@
   Cross-Origin-Embedder-Policy: (require-corp); report-to="default"
   Cross-Origin-Opener-Policy: (same-origin); report-to="default"
   Cross-Origin-Resource-Policy: (same-origin)
-  Access-Control-Allow-Origin: null
+  Access-Control-Allow-Origin: self
