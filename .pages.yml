@@ -44,30 +44,26 @@ content:
     type: file
     path: hugo/data/projects.yml
     icon: panels-top-left
+    list: true
     fields:
-      - name: project
-        label: Project
-        type: object
-        list: true
-        fields:
-        - name: title
-          label: Title
-          description: Project Name
-          type: string
-          required: true
-        - name: logo
-          label: Logo
-          type: image
-          required: true
-          options:
-            categories: [ image ]
-        - name: backgroundImage
-          label: Background Image
-          type: image
-          required: true
-          options:
-            categories: [ image ]
-        - name: link
-          label: Link
-          type: string
-          required: false
+      - name: title
+        label: Title
+        description: Project Name
+        type: string
+        required: true
+      - name: logo
+        label: Logo
+        type: image
+        required: true
+        options:
+          categories: [ image ]
+      - name: backgroundImage
+        label: Background Image
+        type: image
+        required: true
+        options:
+          categories: [ image ]
+      - name: link
+        label: Link
+        type: string
+        required: false
