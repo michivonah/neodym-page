@@ -3,10 +3,43 @@ media:
   output: /media
 
 content:
+  - name: general
+    label: General
+    type: file
+    format: toml-frontmatter
+    path: hugo/hugo.toml
+    icon: file-cog
+    fields:
+      - name: title
+        label: Title
+        description: Website Title
+        type: string
+        required: true
+      - name: legalLabel
+        label: Title
+        description: Link to the legal page
+        type: string
+        required: false
+      - name: legalLink
+        label: Title
+        description: Label for the link to the legal page
+        type: string
+        required: false
+      - name: developerLabel
+        label: Title
+        description: The name for the developers website
+        type: string
+        required: false
+      - name: developerLink
+        label: Title
+        description: The link to the developers website
+        type: string
+        required: false
+
   - name: projects
     label: Projects
-    type: collection
-    path: hugo/content/projects
+    type: file
+    path: hugo/data/projects.yml
     icon: panels-top-left
     fields:
       - name: title
