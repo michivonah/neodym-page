@@ -6,32 +6,31 @@ content:
   - name: general
     label: General
     type: file
-    format: toml-frontmatter
+    format: toml
     path: hugo/hugo.toml
     icon: file-cog
     fields:
       - name: title
-        label: Title
-        description: Website Title
+        label: Website Title
         type: string
         required: true
       - name: legalLabel
-        label: Title
+        label: Legal Label
         description: Link to the legal page
         type: string
         required: false
       - name: legalLink
-        label: Title
+        label: Legalpage URL
         description: Label for the link to the legal page
         type: string
         required: false
       - name: developerLabel
-        label: Title
+        label: Developer Label
         description: The name for the developers website
         type: string
         required: false
       - name: developerLink
-        label: Title
+        label: Developer Website
         description: The link to the developers website
         type: string
         required: false
