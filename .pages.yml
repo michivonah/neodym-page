@@ -1,0 +1,32 @@
+media:
+  input: hugo/static/media
+  output: /media
+
+content:
+  - name: projects
+    label: Projects
+    type: collection
+    path: hugo/content/projects
+    icon: panels-top-left
+    fields:
+      - name: title
+        label: Title
+        description: Project Name
+        type: string
+        required: true
+      - name: logo
+        label: Logo
+        type: image
+        required: true
+        options:
+          categories: [ image ]
+      - name: backgroundImage
+        label: Background Image
+        type: image
+        required: true
+        options:
+          categories: [ image ]
+      - name: link
+        label: Link
+        type: string
+        required: false
