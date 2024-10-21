@@ -1,7 +1,7 @@
-{{ range where .Site.RegularPages "Type" "projects" }}
-        <div class="innerContainer" data-bg="{{ .Params.backgroundImage }}" onclick="window.open('{{ .Params.link }}')">
+{{ range .Site.Data.projects }}
+        <div class="innerContainer" data-bg="{{ .backgroundImage }}" onclick="window.open('{{ .link }}')">
             <div class="applicationLogo">
-                <img src="{{ .Params.logo }}">
+                <img src="{{ .logo }}">
             </div>
             <div class="applicationLink">
                 <a href="#">Jetzt besuchen! <i class="ai-chevron-right"></i></a>

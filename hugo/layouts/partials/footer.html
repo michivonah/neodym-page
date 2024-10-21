@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="footerContent">
-        <p><a href="https://legal.michivonah.ch">Rechtliches</a> | by <a href="https://michivonah.ch/?ref=neodym-dev">michivonah.ch</a> | {{ dateFormat "2006" now }}</p>
+        <p><a href="{{ .Site.Params.legalLink }}">{{ .Site.Params.legalLabel }}</a> | by <a href="{{ .Site.Params.developerLink }}">{{ .Site.Params.developerLabel }}</a> | {{ dateFormat "2006" now }}</p>
     </div>
 </div>
 

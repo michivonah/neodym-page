@@ -1,0 +1,14 @@
+- title: "English Tools"
+  logo: "media/logos/english-logo.png"
+  backgroundImage: "media/backgrounds/bg-english.jpg"
+  link: "https://english.neodym.dev"
+
+- title: "EP-Tagesplanner"
+  logo: "media/logos/ep-planner-logo.png"
+  backgroundImage: "media/backgrounds/bg-ep-tagesplanner.jpg"
+  link: "https://ep.neodym.dev"
+
+- title: "Math Tools"
+  logo: "media/logos/math-logo.png"
+  backgroundImage: "media/backgrounds/bg-math.jpg"
+  link: "https://math.neodym.dev"
