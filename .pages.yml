@@ -45,6 +45,7 @@ content:
       - name: project
         label: Project
         type: object
+        list: true
         fields:
         - name: title
           label: Title
