@@ -14,26 +14,30 @@ content:
         label: Website Title
         type: string
         required: true
-      - name: legalLabel
-        label: Legal Label
-        description: Link to the legal page
-        type: string
-        required: false
-      - name: legalLink
-        label: Legalpage URL
-        description: Label for the link to the legal page
-        type: string
-        required: false
-      - name: developerLabel
-        label: Developer Label
-        description: The name for the developers website
-        type: string
-        required: false
-      - name: developerLink
-        label: Developer Website
-        description: The link to the developers website
-        type: string
-        required: false
+      - name: params
+        label: Parameters
+        type: object
+        fields:
+        - name: legalLabel
+          label: Legal Label
+          description: Link to the legal page
+          type: string
+          required: false
+        - name: legalLink
+          label: Legalpage URL
+          description: Label for the link to the legal page
+          type: string
+          required: false
+        - name: developerLabel
+          label: Developer Label
+          description: The name for the developers website
+          type: string
+          required: false
+        - name: developerLink
+          label: Developer Website
+          description: The link to the developers website
+          type: string
+          required: false
 
   - name: projects
     label: Projects
