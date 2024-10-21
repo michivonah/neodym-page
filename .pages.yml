@@ -1,0 +1,71 @@
+media:
+  input: hugo/static/media
+  output: /media
+
+content:
+  - name: general
+    label: General
+    type: file
+    format: toml
+    path: hugo/hugo.toml
+    icon: file-cog
+    fields:
+      - name: title
+        label: Website Title
+        type: string
+        required: true
+      - name: params
+        label: Parameters
+        type: object
+        fields:
+        - name: legalLabel
+          label: Legal Label
+          description: Link to the legal page
+          type: string
+          required: false
+        - name: legalLink
+          label: Legalpage URL
+          description: Label for the link to the legal page
+          type: string
+          required: false
+        - name: developerLabel
+          label: Developer Label
+          description: The name for the developers website
+          type: string
+          required: false
+        - name: developerLink
+          label: Developer Website
+          description: The link to the developers website
+          type: string
+          required: false
+
+  - name: projects
+    label: Projects
+    type: file
+    path: hugo/data/projects.yml
+    icon: panels-top-left
+    list: true
+    fields:
+      - name: title
+        label: Title
+        description: Project Name
+        type: string
+        required: true
+      - name: logo
+        label: Logo
+        type: image
+        required: true
+        options:
+          path: hugo/static/media/logos
+          categories: [ image ]
+      - name: backgroundImage
+        label: Background Image
+        type: image
+        required: true
+        options:
+          path: hugo/static/media/backgrounds
+          categories: [ image ]
+      - name: link
+        label: Link
+        type: string
+        required: false

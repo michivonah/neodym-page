@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
+	<meta name="generator" content="Hugo 0.136.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>neodym.dev</title>
     <meta name="mobile-web-app-title" content="neodym.dev">
     <meta name="apple-mobile-web-app-title" content="neodym.dev">
@@ -11,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="assets/logo/favicon_256.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon_256.png">
     <link rel="apple-touch-icon" sizes="167x167" href="assets/logo/favicon_256.png">
-    <link rel="canonical" href="https://neodym.dev">
+    <link rel="canonical" href="http://localhost:1313/">
     <script src="https://unpkg.com/akar-icons-fonts"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <meta charset="UTF-8">
@@ -25,7 +26,7 @@
     <meta property="og:description" content="neodym.dev">
     <meta property="og:image" content="assets/logo/favicon_256.png">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:url" content="https://neodym.dev/">
+    <meta property="og:url" content="http://localhost:1313/">
     <meta property="og:site_name" content="neodym.dev">
     <meta property="twitter:title" content="neodym.dev">
     <meta property="twitter:description" content="neodym.dev">
@@ -43,8 +44,11 @@
 </head>
 <body>
 
-    <div class="outerContainer">
-        <div class="innerContainer" data-bg="media/backgrounds/bg-english.jpg" onclick="window.open('https://english.neodym.dev')">
+
+
+<div class="outerContainer">
+    
+        <div class="innerContainer" data-bg="media/backgrounds/bg-english.jpg" onclick="window.open('https:\/\/english.neodym.dev')">
             <div class="applicationLogo">
                 <img src="media/logos/english-logo.png">
             </div>
@@ -53,7 +57,7 @@
             </div>
         </div>
 
-        <div class="innerContainer" data-bg="media/backgrounds/bg-ep-tagesplanner.jpg" onclick="window.open('https://ep.neodym.dev')">
+        <div class="innerContainer" data-bg="media/backgrounds/bg-ep-tagesplanner.jpg" onclick="window.open('https:\/\/ep.neodym.dev')">
             <div class="applicationLogo">
                 <img src="media/logos/ep-planner-logo.png">
             </div>
@@ -62,7 +66,7 @@
             </div>
         </div>
 
-        <div class="innerContainer" data-bg="media/backgrounds/bg-math.jpg" onclick="window.open('https://math.neodym.dev')">
+        <div class="innerContainer" data-bg="media/backgrounds/bg-math.jpg" onclick="window.open('https:\/\/math.neodym.dev')">
             <div class="applicationLogo">
                 <img src="media/logos/math-logo.png">
             </div>
@@ -70,23 +74,25 @@
                 <a href="#">Jetzt besuchen! <i class="ai-chevron-right"></i></a>
             </div>
         </div>
-    </div>
 
-    <div class="footer">
-        <div class="footerContent">
-            <p><a href="https://legal.michivonah.ch">Rechtliches</a> | by <a href="https://michivonah.ch/?ref=neodym-dev">michivonah.ch</a> | 2024</p>
-        </div>
+</div>
+
+
+<div class="footer">
+    <div class="footerContent">
+        <p><a href="https://legal.michivonah.ch">Rechtliches</a> | by <a href="https://michivonah.ch/?ref=neodym-dev">michivonah.ch</a> | 2024</p>
     </div>
+</div>
 
 </body>
 
 <script>
-    // set element background
-    document.querySelectorAll('.innerContainer').forEach(container => {
-            const bgUrl = container.getAttribute('data-bg');
-            if (bgUrl) {
-                container.style.backgroundImage = `url(${bgUrl})`;
-            }
-        });
+
+document.querySelectorAll('.innerContainer').forEach(container => {
+        const bgUrl = container.getAttribute('data-bg');
+        if (bgUrl) {
+            container.style.backgroundImage = `url(${bgUrl})`;
+        }
+    });
 </script>
 </html>

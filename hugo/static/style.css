@@ -1,0 +1,122 @@
+html{scroll-behavior: smooth;}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--color);
+    background: var(--background);
+    text-align: left;
+    font-family: "Arial", sans-serif;
+    --theme1: #54A0FF;
+    --background: #181818;
+    --color: #f8f8f8;
+    --transition: 500ms ease-in-out all;
+}
+
+.outerContainer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100vw;
+    height: 100vh;
+    transition: var(--transition);
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+}
+
+.innerContainer{
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: var(--transition);
+    scroll-snap-align: start;
+    /* CONTENT */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.innerContainer:hover{
+    flex-grow: 1.5;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+@media (min-width: 769px){
+    body:has(.innerContainer:hover) .innerContainer:not(:hover){
+        -webkit-filter: blur(3px);
+        filter: blur(3px);
+    }
+}
+
+.innerContainer img{
+    width: 100%;
+    height: auto;
+}
+
+.applicationLink{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2rem;
+    color: var(--color);
+    font-style: normal;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.applicationLink:hover{
+    color: var(--color);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+a, a:hover, a:focus, p{
+    color: var(--color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 768px){
+    body{
+        overflow: auto;
+    }
+
+    .outerContainer{
+        flex-direction: column;
+        justify-content: flex-start;
+        scroll-snap-type: y mandatory;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 100vw;
+    }
+
+    .innerContainer{
+        width: 100vw;
+        height: 100vh;
+        flex-basis: 100%;
+        align-self: stretch;
+    }
+
+    .footer{
+        background: var(--theme1);
+    }
+}

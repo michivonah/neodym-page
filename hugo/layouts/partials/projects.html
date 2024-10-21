@@ -1,0 +1,10 @@
+{{ range .Site.Data.projects }}
+        <div class="innerContainer" data-bg="{{ .backgroundImage }}" onclick="window.open('{{ .link }}')">
+            <div class="applicationLogo">
+                <img src="{{ .logo }}">
+            </div>
+            <div class="applicationLink">
+                <a href="#">Jetzt besuchen! <i class="ai-chevron-right"></i></a>
+            </div>
+        </div>
+{{ end }}

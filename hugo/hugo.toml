@@ -1,0 +1,9 @@
+baseURL = 'https://neodym.dev'
+languageCode = 'de-CH'
+title = 'neodym.dev'
+
+[params]
+    legalLabel = "Rechtliches"
+    legalLink = "https://legal.michivonah.ch"
+    developerLabel = "michivonah.ch"
+    developerLink = "https://michivonah.ch/?ref=neodym-dev"
