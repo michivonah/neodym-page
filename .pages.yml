@@ -56,12 +56,14 @@ content:
         type: image
         required: true
         options:
+          path: hugo/static/media/logos
           categories: [ image ]
       - name: backgroundImage
         label: Background Image
         type: image
         required: true
         options:
+          path: hugo/static/media/backgrounds
           categories: [ image ]
       - name: link
         label: Link
