@@ -2,6 +2,8 @@ media:
   input: hugo/static/media
   output: /media
 
+settings: false
+
 content:
   - name: general
     label: General
